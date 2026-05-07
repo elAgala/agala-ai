@@ -91,4 +91,12 @@ Accepted
 
 ## Hand-off
 
-Pass the design document → **feature-planner** with a note on which architectural constraints the plan must respect. State: "Architecture defined. Passing to feature-planner with the following constraints: [list]."
+After the design document is complete, invoke the next agents yourself — do not wait for the user to ask.
+
+1. Does this involve user-facing UI changes?
+   → Invoke **ux-designer** with the design doc.
+   Skip if no UI changes.
+
+2. Once ux-designer has completed (or was skipped):
+   → Invoke **feature-planner** with the design doc + ux-designer spec (if produced).
+   Include the implementation constraints from this design in what you pass.

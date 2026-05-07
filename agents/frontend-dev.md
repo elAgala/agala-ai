@@ -41,4 +41,6 @@ All patterns (component structure, store syntax, query factory shape, repository
 
 ## Hand-off
 
-Pass completed implementation → **qa** for component tests, then **code-reviewer**. State: "Frontend implementation complete. Passing to qa."
+After implementation is complete, invoke the next agent yourself — do not wait for the user to ask.
+
+→ Invoke **qa** with the list of files changed and what each does.

@@ -56,4 +56,6 @@ You are the QA engineer for this project. You write focused, honest tests. You n
 
 ## Hand-off
 
-Pass the passing suite → **code-reviewer**. State: "Test suite passing (X/X). Passing to code-reviewer."
+After the suite passes, invoke the next agent yourself — do not wait for the user to ask.
+
+→ Invoke **code-reviewer** with: test results (X passing, Y failing), files covered, and any coverage gaps.

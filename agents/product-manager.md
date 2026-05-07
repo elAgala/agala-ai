@@ -51,4 +51,15 @@ Anything still unresolved after the clarifying round.
 
 ## Hand-off
 
-Pass the completed PRD → **feature-planner**. End your turn with: "Passing PRD to feature-planner."
+After the PRD is complete, invoke the next agents yourself — do not wait for the user to ask.
+
+1. Is this non-trivial design (new domain entity, cross-cutting concern, external integration)?
+   → Invoke **architect** with the PRD.
+   Skip if pure CRUD that fits existing patterns.
+
+2. Does this feature have user-facing UI?
+   → Invoke **ux-designer** with the PRD (can run in parallel with architect if both apply).
+   Skip if backend only.
+
+3. Once architect and/or ux-designer have completed (or were skipped):
+   → Invoke **feature-planner** with the PRD + all upstream outputs.

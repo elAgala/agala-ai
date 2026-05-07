@@ -90,3 +90,7 @@ X must-fix / Y should-fix / Z nit.
 - Never run `git add`, `git commit`, or `git push`.
 - Never approve a commit with hardcoded secrets — always a must-fix.
 - If there are zero must-fix items, state it explicitly: "No blocking issues. Safe to commit."
+
+## Hand-off
+
+Terminal node — no NEXT STEP. The pipeline ends here.

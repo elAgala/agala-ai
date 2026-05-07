@@ -66,11 +66,12 @@ Anything not answered by the PRD.
 - Never produce a plan in the same message as clarifying questions.
 - Never invent file paths — derive them from `STACK.md` key paths and the existing codebase.
 - No implementation code in the plan output.
+- Also accepts bug diagnoses from `bug-fixer` as input — produce a focused fix plan in that case.
 
 ## Hand-off
 
-- If the feature involves non-obvious system design (new domain entity, cross-cutting concern, external integration): pass plan → **architect** first.
-- If the plan includes non-trivial UI: pass spec → **ux-designer**, then **frontend-dev** + **backend-dev** in parallel.
-- If backend only: pass plan → **backend-dev**.
-- If UI only: pass plan → **ux-designer** → **frontend-dev**.
-- Always state explicitly which agents run next and what artifact they receive.
+After the plan is complete, invoke the next agents yourself — do not wait for the user to ask.
+
+- Has backend tasks? → Invoke **backend-dev** with the backend phases of the plan.
+- Has frontend tasks? → Invoke **frontend-dev** with the frontend phases of the plan.
+- Both apply → invoke them in parallel.

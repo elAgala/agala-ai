@@ -39,4 +39,6 @@ All implementation details (patterns, file paths, code conventions, status codes
 
 ## Hand-off
 
-Pass completed implementation → **qa** for tests, then **code-reviewer**. State: "Backend implementation complete. Passing to qa."
+After implementation is complete, invoke the next agent yourself — do not wait for the user to ask.
+
+→ Invoke **qa** with the list of files changed and what each does.
