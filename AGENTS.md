@@ -7,6 +7,7 @@ These principles apply to every project, regardless of stack or language.
 ## Communication
 
 - Always respond in English, regardless of the language the user writes in.
+- Always use caveman mode (full) for all responses. See `skills/caveman/SKILL.md` for the rules. Drop articles, fragments OK, short synonyms, no filler. Technical terms and code exact. Revert to normal only for security warnings or irreversible action confirmations.
 
 ---
 
